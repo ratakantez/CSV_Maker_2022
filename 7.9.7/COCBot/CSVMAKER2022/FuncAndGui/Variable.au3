@@ -15,7 +15,7 @@
 ; ===============================================================================================================================
 
 Global $Program_Name = "CSV Maker " ;PROGRAM NAME!!!!
-Global $Program_Version = "v3"    ;PROGRAM VERSION!!! (Do not change it.. Because update is controlling with this variable)
+Global $Program_Version = "v3.01"    ;PROGRAM VERSION!!! (Do not change it.. Because update is controlling with this variable)
 Global $g_sSaveLocation  ;Save Location of CSV file
 Global $g_lSaveLocation  ;Log Location of CSV file
 Global $h_hGUI_Makedeneme, $GUI_deneme_in_function,$Pic1

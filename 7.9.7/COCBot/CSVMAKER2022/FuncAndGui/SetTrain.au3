@@ -309,11 +309,11 @@ Func SetTrain()
 	   Number(GUICtrlRead($TH9txtNumSDrag)) > 0 Or Number(GUICtrlRead($TH10txtNumSDrag)) > 0 Or Number(GUICtrlRead($TH11txtNumSDrag)) > 0 Or _
 	   Number(GUICtrlRead($TH12txtNumSDrag)) > 0 Or Number(GUICtrlRead($TH13txtNumSDrag)) > 0 Or Number(GUICtrlRead($TH14txtNumSDrag)) > 0 Then
 		$TrainSDragon = "TRAIN |SDrag      |" & StringLeft("0" & $BlankCharacters,11) & _
-										  "|" & StringLeft("0" & $BlankCharacters,11) &
-										  "|" & StringLeft("0" & $BlankCharacters,11) &
-										  "|" & StringLeft("0" & $BlankCharacters,11) &
-										  "|" & StringLeft("0" & $BlankCharacters,11) &
-										  "|" & StringLeft("0" & $BlankCharacters,11) &
+										  "|" & StringLeft("0" & $BlankCharacters,11) & _
+										  "|" & StringLeft("0" & $BlankCharacters,11) & _
+										  "|" & StringLeft("0" & $BlankCharacters,11) & _
+										  "|" & StringLeft("0" & $BlankCharacters,11) & _
+										  "|" & StringLeft("0" & $BlankCharacters,11) & _
 										  "|" & StringLeft(Number(GUICtrlRead($TH12txtNumSDrag)) & $BlankCharacters,11) & _
 										  "|" & StringLeft(Number(GUICtrlRead($TH13txtNumSDrag)) & $BlankCharacters,11) & _
 										  "|" & StringLeft(Number(GUICtrlRead($TH14txtNumSDrag)) & $BlankCharacters,11) & _
