@@ -172,7 +172,7 @@ Func SetTrain()
 	If Number(GUICtrlRead($TH6txtNumSuperWall)) > 0 Or Number(GUICtrlRead($TH7txtNumSuperWall)) > 0 Or Number(GUICtrlRead($TH8txtNumSuperWall)) > 0 Or _
 	   Number(GUICtrlRead($TH9txtNumSuperWall)) > 0 Or Number(GUICtrlRead($TH10txtNumSuperWall)) > 0 Or Number(GUICtrlRead($TH11txtNumSuperWall)) > 0 Or _
 	   Number(GUICtrlRead($TH12txtNumSuperWall)) > 0 Or Number(GUICtrlRead($TH13txtNumSuperWall)) > 0 Or Number(GUICtrlRead($TH14txtNumSuperWall)) > 0 Then
-		$TrainSWallB = "TRAIN |SWall      |" & & StringLeft("0" & $BlankCharacters,11) & _
+		$TrainSWallB = "TRAIN |SWall      |" & StringLeft("0" & $BlankCharacters,11) & _
 										 "|" & StringLeft("0" & $BlankCharacters,11) & _
 										 "|" & StringLeft("0" & $BlankCharacters,11) & _
 										 "|" & StringLeft("0" & $BlankCharacters,11) & _
@@ -294,7 +294,7 @@ Func SetTrain()
 		$TrainIDragon = "TRAIN |IDrag      |" & StringLeft("0" & $BlankCharacters,11) & _
 										  "|" & StringLeft("0" & $BlankCharacters,11) & _
 										  "|" & StringLeft("0" & $BlankCharacters,11) & _
-										  "|" & StringLeft("0" & $BlankCharacters,11) & __
+										  "|" & StringLeft("0" & $BlankCharacters,11) & _
 										  "|" & StringLeft("0" & $BlankCharacters,11) & _
 										  "|" & StringLeft(Number(GUICtrlRead($TH11txtNumIDrag)) & $BlankCharacters,11) & _
 										  "|" & StringLeft(Number(GUICtrlRead($TH12txtNumIDrag)) & $BlankCharacters,11) & _
@@ -325,16 +325,16 @@ Func SetTrain()
 	If Number(GUICtrlRead($TH6txtNumPekk)) > 0 Or Number(GUICtrlRead($TH7txtNumPekk)) > 0 Or Number(GUICtrlRead($TH8txtNumPekk)) > 0 Or _
 	   Number(GUICtrlRead($TH9txtNumPekk)) > 0 Or Number(GUICtrlRead($TH10txtNumPekk)) > 0 Or Number(GUICtrlRead($TH11txtNumPekk)) > 0 Or _
 	   Number(GUICtrlRead($TH12txtNumPekk)) > 0 Or Number(GUICtrlRead($TH13txtNumPekk)) > 0 Or Number(GUICtrlRead($TH14txtNumPekk)) > 0 Then
-		$TrainPekka = "TRAIN |Pekk      |" & StringLeft("0" & $BlankCharacters,11) & _
-									   "|" & StringLeft("0" & $BlankCharacters,11) & _
-									   "|" & StringLeft(Number(GUICtrlRead($TH8txtNumPekk)) & $BlankCharacters,11) & _
-									   "|" & StringLeft(Number(GUICtrlRead($TH9txtNumPekk)) & $BlankCharacters,11) & _
-									   "|" & StringLeft(Number(GUICtrlRead($TH10txtNumPekk)) & $BlankCharacters,11) & _
-									   "|" & StringLeft(Number(GUICtrlRead($TH11txtNumPekk)) & $BlankCharacters,11) & _
-									   "|" & StringLeft(Number(GUICtrlRead($TH12txtNumPekk)) & $BlankCharacters,11) & _
-									   "|" & StringLeft(Number(GUICtrlRead($TH13txtNumPekk)) & $BlankCharacters,11) & _
-									   "|" & StringLeft(Number(GUICtrlRead($TH14txtNumPekk)) & $BlankCharacters,11) & _
-									   "|" & @CRLF
+		$TrainPekka = "TRAIN |Pekk       |" & StringLeft("0" & $BlankCharacters,11) & _
+									    "|" & StringLeft("0" & $BlankCharacters,11) & _
+									    "|" & StringLeft(Number(GUICtrlRead($TH8txtNumPekk)) & $BlankCharacters,11) & _
+									    "|" & StringLeft(Number(GUICtrlRead($TH9txtNumPekk)) & $BlankCharacters,11) & _
+									    "|" & StringLeft(Number(GUICtrlRead($TH10txtNumPekk)) & $BlankCharacters,11) & _
+									    "|" & StringLeft(Number(GUICtrlRead($TH11txtNumPekk)) & $BlankCharacters,11) & _
+									    "|" & StringLeft(Number(GUICtrlRead($TH12txtNumPekk)) & $BlankCharacters,11) & _
+									    "|" & StringLeft(Number(GUICtrlRead($TH13txtNumPekk)) & $BlankCharacters,11) & _
+									    "|" & StringLeft(Number(GUICtrlRead($TH14txtNumPekk)) & $BlankCharacters,11) & _
+									    "|" & @CRLF
 	Else
 		$TrainPekka = ""
 	EndIf
@@ -631,16 +631,16 @@ Func SetTrain()
 	If Number(GUICtrlRead($TH6txtNumIceGolem)) > 0 Or Number(GUICtrlRead($TH7txtNumIceGolem)) > 0 Or Number(GUICtrlRead($TH8txtNumIceGolem)) > 0 Or _
 	   Number(GUICtrlRead($TH9txtNumIceGolem)) > 0 Or Number(GUICtrlRead($TH10txtNumIceGolem)) > 0 Or Number(GUICtrlRead($TH11txtNumIceGolem)) > 0 Or _
 	   Number(GUICtrlRead($TH12txtNumIceGolem)) > 0 Or Number(GUICtrlRead($TH13txtNumIceGolem)) > 0 Or Number(GUICtrlRead($TH14txtNumIceGolem)) > 0 Then
-		$TrainIceGolem = "TRAIN |IceG      |" & StringLeft("0" & $BlankCharacters,11) & _
-										  "|" & StringLeft("0" & $BlankCharacters,11) & _
-										  "|" & StringLeft("0" & $BlankCharacters,11) & _
-										  "|" & StringLeft("0" & $BlankCharacters,11) & _
-										  "|" & StringLeft("0" & $BlankCharacters,11) & _
-										  "|" & StringLeft(Number(GUICtrlRead($TH11txtNumIceGolem)) & $BlankCharacters,11) & _
-										  "|" & StringLeft(Number(GUICtrlRead($TH12txtNumIceGolem)) & $BlankCharacters,11) & _
-										  "|" & StringLeft(Number(GUICtrlRead($TH13txtNumIceGolem)) & $BlankCharacters,11) & _
-									      "|" & StringLeft(Number(GUICtrlRead($TH14txtNumIceGolem)) & $BlankCharacters,11) & _
-									      "|" & @CRLF
+		$TrainIceGolem = "TRAIN |IceG       |" & StringLeft("0" & $BlankCharacters,11) & _
+										   "|" & StringLeft("0" & $BlankCharacters,11) & _
+										   "|" & StringLeft("0" & $BlankCharacters,11) & _
+										   "|" & StringLeft("0" & $BlankCharacters,11) & _
+										   "|" & StringLeft("0" & $BlankCharacters,11) & _
+										   "|" & StringLeft(Number(GUICtrlRead($TH11txtNumIceGolem)) & $BlankCharacters,11) & _
+										   "|" & StringLeft(Number(GUICtrlRead($TH12txtNumIceGolem)) & $BlankCharacters,11) & _
+										   "|" & StringLeft(Number(GUICtrlRead($TH13txtNumIceGolem)) & $BlankCharacters,11) & _
+									       "|" & StringLeft(Number(GUICtrlRead($TH14txtNumIceGolem)) & $BlankCharacters,11) & _
+									       "|" & @CRLF
 	Else
 		$TrainIceGolem = ""
 	EndIf
@@ -1248,7 +1248,7 @@ Func SetTrain()
 					  $TrainSMini & $TrainHogsRider & $TrainValkyre & $TrainSValkyre & $TrainGolem & $TrainWitch & $TrainSWitch & $TrainLava & _
 					  $TrainIHound & $TrainBowler & $TrainSBowler & $TrainIceGolem & $TrainHunter & $TrainLSpell & $TrainHSpell & $TrainRSpell & _
 					  $TrainJSpell & $TrainFSpell & $TrainCSpell & $TrainISpell & $TrainPSpell & $TrainESpell & $TrainHaSpell & $TrainSkSpell & $TrainBaSpell & _
-					  $TrainBattleB & $TrainWallw & $TrainStoneS & $TrainSiegeB & $TrainLogL & $TrainKing & $TrainQueen & $TrainWarden & _
+					  $TrainBattleB & $TrainWallw & $TrainStoneS & $TrainSiegeB & $TrainLogL & $TrainFlameF & $TrainKing & $TrainQueen & $TrainWarden & _
 					  $TrainRoyaleC
 EndFunc
 
